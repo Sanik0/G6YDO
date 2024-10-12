@@ -3,10 +3,10 @@ const menuButton = document.getElementById('menu-button');
 const closeButton = document.getElementById('close-button');
 
 menuButton.addEventListener('click', () => {
-    if (sidebar.style.transform === 'translateX(0px)') {
-        sidebar.style.transform = 'translateX(-250px)';
+    if (sidebar.style.transform === 'translateX(-250px)') {
+      sidebar.style.transform = 'translateX(0px)';
     } else {
-        sidebar.style.transform = 'translateX(0px)';
+      sidebar.style.transform = 'translateX(0px)';
     }
 }
 );

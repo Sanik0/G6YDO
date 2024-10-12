@@ -906,54 +906,6 @@ body {
 
  /* ================================ Statistics, dstrict ============================== */
 
- /* ==================nav================== */
-
- .main #stats .statistics__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.main #stats .statistics__nav .nav__header {
-    margin-right: auto;
-    color: var(--white-color);
-}
-
-.main #stats .statistics__nav .nav__header .grey {
-    color: var(--grey-color);
-} 
-
-.main #stats .statistics__nav .nav__header h4 {
-    font-weight: 700;
-}
-
-.main #stats .statistics__nav.nav__header h5 {
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-
-.main #stats .statistics__nav .nav__logout {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    padding: 10px;
-    border-radius: 10px;
-    color: var(--white-color);
-    text-decoration: none;
-    transition: .2s ease;
-}
-
-.main #stats .statistics__nav .nav__logout:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
-}
-
-.main #stats .statistics__nav .nav__logout .fa-solid {
-    margin-right: 10px;
-}
-
 
 /* ==================map================== */
  #stats .map__population {
@@ -1068,7 +1020,7 @@ body {
 
 #stats .map__population .chart  #myChart {
     height: 300px;
-    width: 600px;  
+    width: 100%;  
 }
 
 /* ==================piechart================== */
@@ -1160,6 +1112,7 @@ small {
     width: 200px;
     margin: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(-250px);
 }
 
 
@@ -1181,12 +1134,11 @@ small {
     margin: -200px 20px 20px 15px;
 }
 
-
-.main .main__content .districts .main__nav .search {
-    width: auto;
-}
-
 /* district */
+
+.main .main__content .districts .district__container .district .district__number {
+    padding: 5px;
+}
 
 .main .main__content .districts .district__container  {
     align-items: center;
@@ -1210,8 +1162,25 @@ small {
 }
 
 
+/* =================================navigation======================== */
+ .main__nav .search {
+    width: 150px;
+    padding: 5px;
+    margin-right: 5px;
+}
 
+.main__nav .search .fa-solid {
+    margin-right: 5px;
+    font-size: 12px;
+}
 
+.main__nav .nav__logout {
+    padding: 5px;
+}
+
+.main__nav .nav__logout h5 {
+    display: none;
+}
 
 /* ================================Add User============================== */
 
@@ -1522,23 +1491,10 @@ small {
 
  /* ================================ Statistics, dstrict ============================== */
  /* ==================map================== */
- #stats .map__population {
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 20px;
-    flex-wrap: wrap;
-    background: var(--white-color);
-    max-height: auto;
-}
- 
 .main  #stats  .map__population .map-div {
-    height: 300px;
+    height: 200px;
     margin-left: 50px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 
@@ -1548,96 +1504,22 @@ small {
     background: transparent;
 }
 
-/* district1*/
-.main  #stats .map__population  .map-div svg #g10967 {
-    fill: rgb(255, 152, 152);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main  #stats .map-div svg #g10967:hover {
-    fill: #ff0000;
-
-}
-
-/* district2 */
-.main  #stats .map__population  .map-div  svg #g10894 {
-    fill: rgb(255, 145, 200);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main  #stats .map__population  .map-div svg #g10894:hover {
-    fill: rgb(255, 0, 128);
-
-}
-
-/* district3 */
-
-.main  #stats .map__population  .map-div svg #g11169 {
-    fill: rgb(135, 255, 135);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main  #stats .map__population  .map-div  svg #g11169:hover {
-    fill: rgb(0, 255, 0);
-}
-
-/* district4*/
-.main  #stats .map__population  .map-div svg #g11089 {
-    fill:rgb(255, 212, 131);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main  #stats .map__population .map-div svg #g11089:hover {
-    fill:rgb(255, 166, 0);
-
-}
-
-/* district5 */
-.main  #stats .map__population  .map-div  svg #g3968 {
-    fill: rgb(223, 128, 255);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main  #stats .map__population  .map-div svg #g3968:hover {
-    fill: rgb(191, 0, 255);
-
-}
-
-/* district6 */
-.main  #stats .map__population  .map-div  svg #g10914 {
-    fill: rgb(126, 126, 255);
-    stroke: var(--white-color);
-    stroke-width: 3px;
-    transition: .2s ease;
-}
-
-.main #stats .map__population  .map-div svg #g10914:hover {
-    fill: rgb(0, 0, 255);
-}
 
 /* ==================barchart================== */
 
 #stats .map__population .chart {
+    display: flex;
+    align-items: flex-end;
+    background: transparent;
     padding: 20px;
-    width: 100%;
+    height: 100%;
     
 }
 
 #stats .map__population .chart  #myChart {
-    height: 100%;
+    height: 300px;
     width: 100%;  
 }
-
 /* ==================piechart================== */
 #stats .charts {
     width: 100%;
