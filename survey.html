@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,267 +8,682 @@
     <title>Sanico</title>
 </head>
 <body>
+    
+    <!-- ============================================DashBoard================================== -->
+
+    <section class="dashboard" id="dashboard">
+        <div class="menu-button" id="close-button">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="logo">
+            <img src="images/QCYDO.png" alt="">
+            <h4>Youth development</h4>
+        </div>
+
+    
+        <div class="dashboard__items">
+
+            <a href="user-profile.html" class="item admin">
+                <div class="image__container">
+                    <img src="images/avatar.jpg" alt="">
+                </div>
+                <h4>Profile</h4>
+            </a>
+
+            
+            <a href="index.html" class="item">
+                <i class="fa-solid fa-chart-area"></i>
+                <h4>District</h4>
+            </a>
+
+            <a href="advocacies.html" class="item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <h4>Advocacies</h4>
+            </a>
+            
+            <a href="statistics.html" class="item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h4>Statistics</h4>
+            </a>
+
+            <a href="manage-users.html" class="item">
+                <i class="fa-solid fa-users"></i>
+                <h4>Manage users</h4>
+            </a>
+
+            <a href="survey.html" class="item">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h4>Assesment</h4>
+            </a>
+
+            <a href="result.html" class="item">
+                <i class="fa-solid fa-file-circle-question"></i>
+                <h4>Result</h4>
+            </a>
+
+        </div>
+
+        <div class="dashboard__items account">
+            <h5>ACCOUNT PAGES</h5>
+
+            <a href="sign-in.html" class="item">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <h4>Sign-in</h4>
+            </a>
+
+            <a href="sign-up.html" class="item">
+                <i class="fa-solid fa-file-signature"></i>
+                <h4>Sign-Up</h4>
+            </a>
+        </div>
+    </section>
 
     <!-- ============================================main================================== -->
 
-    <section class="main" id="survey">
-
-        <div class="survey__header">
+    <section class="main">
+        <div class="main__background">
             <div class="background__filter"></div>
-            <div class="logo">
-                <img src="images/QCYDO.png" alt="">
-                <div class="brand">
-                    <h1>Youth Development</h1>
-                    <small>Lorem ipsum dolor sit amet.</small>
-                </div>
-                
-            </div>
         </div>
 
-        <section class="survey__container">
-            <!-- =================welcoming============= -->
+        <div class="main__content">
 
-            <div class="survey" id="welcome">
+            <div class="main__nav">
 
-                <div class="image__container">
-                    <img src="images/QCYDO.png" alt="">
+                <div class="menu-button" id="menu-button">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
 
-                <div class="welcome__container">
-
-                    <h3>Welcome to Kabataan Kyusi</h3>
-                    <p>To help us understand your needs and provide the right support, we kindly ask you to fill out and answer the assesment questions
-                        below. Your responses will guide us in tailoring our advocacy programs to best serve you and the community
-                    </p>
-
+                <div class="nav__header">
+                    <h5><span class="grey">Pages</span> / Assesment</h5>
+                    <h4>Assesment</h4>
                 </div>
 
+                <div class="nav__notif">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notif__badge">4</span>
+                        <div class="notif">
+                            <h3>SYSTEM NOTIFICATION</h3>
+                            <h4>Your District Has a significant problem with <span class="advocacy">Early Pregnancy</span></h4>
+                            <p>We suggest that you gain more knowledge about this issue. Click the link, Thank you!</p>
+                            <a href="" class="btn__view">View </a>
+
+                        </div>
+                </div>
+                            
+
+                <a href="logout.html" class="nav__logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h5>Log Out</h5>
+                </a>
             </div>
 
-            <!-- =================survey============= -->
+            
 
+            <section class="survey__container">
 
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                    <!-- <button type="submit">Submit</button> -->
-                </form>
-            </div>
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                    <!-- <button type="submit">Submit</button> -->
-                </form>
-            </div>
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                    <!-- <button type="submit">Submit</button> -->
-                </form>
-            </div>
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                    <!-- <button type="submit">Submit</button> -->
-                </form>
-            </div>
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                </form>
-            </div>
-            <div class="survey">
-                <form id="survey-form">
-                    <label for="question">
-                        <h2>I feel concerned about contacting HIV.</h2>
-                    </label>
-                    <div class="rating">
-                        <div class="rate">
-                            <input type="radio" name="rating" value="1" required>
-                            <label for="1">Strongly Agree</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="2" required>
-                            <label for="2">Agree</label>
-                        </div>
-
-                        <div class="rate">
-                            <input type="radio" name="rating" value="3" required>
-                            <label for="3">Neutral</label>
-                        </div>
-        
-                        <div class="rate">
-                            <input type="radio" name="rating" value="4" required>
-                            <label for="4">Disagree</label>
-                        </div>
-       
-                        <div class="rate">
-                            <input type="radio" name="rating" value="5" required>
-                            <label for="5">Strongly Disagree</label>
-                        </div>        
-                    </div>
-                    <!-- <button type="submit">Submit</button> -->
-                </form>
-            </div>
-
-            <div class="submit__button">
-                <button type="submit">Submit</button>
-            </div>
-
-        </section>
-
-        <section class="footer">
-            <small>&copy; Copyright Group 6. 2024
-            </small>
-        </section>
-
-
-
-       
+               
+                <!-- =================welcoming============= -->
     
+                <div class="survey" id="welcome">
+    
+                    <!-- <div class="image__container">
+                        <img src="images/QCYDO.png" alt="">
+                    </div> -->
+    
+                    <div class="welcome__container">
+    
+                        <h3>Welcome to Kabataan Kyusi</h3>
+                        <p>To help us understand your needs and provide the right support, we kindly ask you to fill out and answer the assesment questions
+                            below. Your responses will guide us in tailoring our advocacy programs to best serve you and the community
+                        </p>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- =================survey============= -->
+    
+    
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know how to prevent getting pregnant.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I understand different ways to use birth control. </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I can explain why it is better to not having sex at this age. </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know where to find information about preventing pregnancy. </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I feel comfortable talking about relationships and saying no to sex. </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>. I know how HIV is transmitted.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I am familiar with the symptoms of HIV.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I understand the difference between HIV and AIDS.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I believe regular testing for sexually transmitted infections is important.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I believe regular testing for sexually transmitted infections is important.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know how to tell if I am spending too much time playing video game</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>. I am aware of the potential negative effects of excessive gaming on mental health and
+                                physical health.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know how to limit my gaming time
+                            </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know what gaming addiction means</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I understand how gaming can affect my sleep </h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>. I know the laws that protect people from sexual violence</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know where to get help if someone experiences sexual violence</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>. I can identify the signs of someone who may have experienced sexual violence.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>. I know how to support a friend who has experienced sexual violence.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know of local organizations that provide support for sexual violence survivors.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I understand why supporting LGBTQ rights is important.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know what LGBTQ stands for.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2> I understand the challenges LGBTQ people face in society.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know the importance of respecting everyone’s gender identity.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+                <div class="survey">
+                    <form id="survey-form">
+                        <label for="question">
+                            <h2>I know the difference between sexual orientation and gender identity.</h2>
+                        </label>
+                        <div class="rating">
+                            <div class="rate">
+                                <input type="radio" name="rating" value="1" required>
+                                <label for="1">Yes</label>
+                            </div>
+            
+                            <div class="rate">
+                                <input type="radio" name="rating" value="2" required>
+                                <label for="2">No</label>
+                            </div>
+     
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+               
+    
+                <div class="submit__button">
+                    <button type="submit">Submit</button>
+                </div>
+    
+            </section>
+
+        </div>       
+
     </section>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
-

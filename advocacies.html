@@ -10,26 +10,25 @@
 <body>
 
     <!-- ============================================DashBoard================================== -->
-   
-
-    
     <section class="dashboard" id="dashboard">
         <div class="menu-button" id="close-button">
             <i class="fa-solid fa-x"></i>
         </div>
+
         <div class="logo">
             <img src="images/QCYDO.png" alt="">
             <h4>Youth development</h4>
         </div>
 
-        <!-- <div class="admin">
-            <div class="image__container">
-                <img src="" alt="">
-            </div>
-            <h5>Admin</h5>
-        </div> -->
-
+    
         <div class="dashboard__items">
+
+            <a href="user-profile.html" class="item admin">
+                <div class="image__container">
+                    <img src="images/avatar.jpg" alt="">
+                </div>
+                <h4>Profile</h4>
+            </a>
 
             
             <a href="index.html" class="item">
@@ -47,15 +46,21 @@
                 <h4>Statistics</h4>
             </a>
 
-            <a href="add-user.html" class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h4>Add user</h4>
-            </a>
-
             <a href="manage-users.html" class="item">
                 <i class="fa-solid fa-users"></i>
                 <h4>Manage users</h4>
             </a>
+
+            <a href="survey.html" class="item">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h4>Assesment</h4>
+            </a>
+
+            <a href="result.html" class="item">
+                <i class="fa-solid fa-file-circle-question"></i>
+                <h4>Result</h4>
+            </a>
+
         </div>
 
         <div class="dashboard__items account">
@@ -70,13 +75,285 @@
                 <i class="fa-solid fa-file-signature"></i>
                 <h4>Sign-Up</h4>
             </a>
-
         </div>
     </section>
 
 
     <!-- ============================================main================================== -->
     <section class="main">
+        <div class="main__background">
+            <div class="background__filter"></div>
+        </div>
+
+        <div class="main__content">
+
+            <div class="districts">
+
+                <div class="main__nav">
+
+                    <div class="menu-button" id="menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="nav__header">
+                        <h5><span class="grey">Pages</span> / Advocacies</h5>
+                        <h4>Advocacies</h4>
+                    </div>
+                                   
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search..." class="search-input">
+                    </div>
+
+                    <a href="logout.html" class="nav__logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h5>Log Out</h5>
+                    </a>
+                </div>
+
+                <div class="district__container" id="advocacy__container">
+
+                    <a href="#" class="district" id="advocacy">
+                        <div class="district__population">
+                            <h4 class="population__header">Early Pregnancy</h4>
+                            <h4>10,900</h4>
+                        </div>
+                            <div class="district__number d1">
+                                <h1>A1</h1>
+                            </div>
+                    </a>
+
+                    <a href="#" class="district" id="advocacy">
+                        <div class="district__population">
+                            <h4 class="population__header">Online Gaming Addiction</h4>
+                            <h4>900</h4>
+                        </div>
+                        <div class="district__number d2">
+                            <h1>A2</h1>
+                        </div>
+                    </a>
+
+                    <a href="#" class="district" id="advocacy">
+                        <div class="district__population">
+                            <h4 class="population__header">Sexual Violence</h4>
+                            <h4>700</h4>
+                        </div>
+                        <div class="district__number d3">
+                            <h1>A3</h1>
+                        </div>
+                    </a>
+
+                    <a href="#" class="district" id="advocacy">
+                        <div class="district__population">
+                            <h4 class="population__header">HIV Awareness</h4>
+                            <h4>1000</h4>
+                        </div>
+                        <div class="district__number d4">
+                            <h1>A4</h1>
+                        </div>
+                    </a>
+
+                    <a href="#" class="district" id="advocacy">
+                        <div class="district__population">
+                            <h4 class="population__header">LGBTQ Empowerment</h4>
+                            <h4>600</h4>
+                        </div>
+                        <div class="district__number d5">
+                            <h1>A5</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="district__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>contact</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ronan Sanico</td>
+                                <td>18</td>
+                                <td>Male</td>
+                                <td>90909000909</td>
+                                <td>sanico@gmail.com</td>
+                                <td>Batasan Hills Qc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+             
+
+
+
+            </div>
+
+        </div>       
+
+    </section>
+
+    <!-- <section class="main">
         <div class="main__background">
             <div class="background__filter"></div>
         </div>
@@ -103,89 +380,35 @@
             
             <section class="advocacy__container">
 
-                <div class="advocacy">
-                    <div class="image__container">
-                        <img src="images/early_pregnancy.jpg" alt="">
-                    </div>
-                    <div class="advocacy__info">
+                <div class="card__container">
+                    <div class="card" id="card1">
+                        <div class="card__filter"></div>
                         <h1>Early Pregnancy</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel culpa quasi facilis enim suscipit?</p>
                     </div>
-                    <a href="advocacy.html" class="btn--view">
-                        <p>View More</p>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-
-                <div class="advocacy">
-                    <div class="image__container">
-                        <img src="images/online.jpg" alt="">
+                    <div class="card" id="card2">
+                        <div class="card__filter"></div>
+                        <h1>Online Gambling Addiction</h1>
                     </div>
-                    <div class="advocacy__info">
-                        <h1>Online Gaming Addiction</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel culpa quasi facilis enim suscipit?</p>
-                    </div>
-                    <a href="advocacy.html" class="btn--view">
-                        <p>View More</p>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-
-                <div class="advocacy">
-                    <div class="image__container">
-                        <img src="images/sexual__violence.webp" alt="">
-                    </div>
-                    <div class="advocacy__info">
+                    <div class="card" id="card3">
+                        <div class="card__filter"></div>
                         <h1>Sexual Violence</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel culpa quasi facilis enim suscipit?</p>
                     </div>
-                    <a href="advocacy.html" class="btn--view">
-                        <p>View More</p>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-
-                <div class="advocacy">
-                    <div class="image__container">
-                        <img src="images/hiv.jpg" alt="">
+                    <div class="card" id="card4">
+                        <div class="card__filter"></div>
+                        <h1>Sexual Violence</h1>
                     </div>
-                    <div class="advocacy__info">
-                        <h1>HIV Awareness</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel culpa quasi facilis enim suscipit?</p>
-                    </div>
-                    <a href="advocacy.html" class="btn--view">
-                        <p>View More</p>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-
-                <div class="advocacy">
-                    <div class="image__container">
-                        <img src="images/lgbtq.png" alt="">
-                    </div>
-                    <div class="advocacy__info">
+                    <div class="card" id="card5">
+                        <div class="card__filter"></div>
                         <h1>LGBTQ Empowerment</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel culpa quasi facilis enim suscipit?</p>
                     </div>
-                    <a href="advocacy.html" class="btn--view">
-                        <p>View More</p>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
                 </div>
 
+            
             </section>
-
-            <!-- <section class="footer">
-                <small>&copy; Copyright Group 6. 2024
-                </small>
-            </section> -->
     
-
-
-
         </div>       
 
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
 

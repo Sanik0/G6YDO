@@ -43,6 +43,8 @@ new Chart(ctx, {
     }]
   },
   options: {
+  indexAxis: 'x',
+  maintainAspectRatio: false, 
     scales: {
       y: {
         beginAtZero: true
@@ -137,4 +139,6 @@ new Chart(ctx4, {
     }
   }
 });
+
+
 

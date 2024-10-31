@@ -58,7 +58,7 @@ body {
 .dashboard .admin {
     display: flex;
     align-items: center;
-    margin: 10px 10px;
+    text-decoration: none;
 }
 
 .dashboard .admin .image__container {
@@ -66,7 +66,6 @@ body {
     width: 30px;
     border-radius: 50%;
     overflow: hidden;
-    padding: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,15 +140,23 @@ body {
 }
 
 .dashboard__items .item .fa-chart-area {
-    color: rgb(154, 40, 40);
+    color: #9a2828;
 }
 
 .dashboard__items .item .fa-chart-simple {
-    color: rgb(29, 61, 201);
+    color: #1d3dc9;
 }
 
 .dashboard__items .item .fa-file-signature {
-    color: rgb(255, 63, 63);
+    color: #ff3f3f;
+}
+
+.dashboard__items .item .fa-square-poll-horizontal {
+    color: #9900ff;
+}
+
+.dashboard__items .item .fa-file-circle-question {
+    color: #ff9900;
 }
 
 /* account actions */
@@ -248,12 +255,88 @@ body {
 
 }
 
+.main__nav .nav__notif {
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.main__nav .nav__notif .fa-solid {
+    color: var(--white-color);
+    font-size: 20px;
+    transition: .2s ease;
+    position: relative;
+
+}
+
+.main__nav .nav__notif .notif__badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+    padding: 1px 3px;
+    font-size: 10px;
+    position: absolute; /* Position the badge within the relatively positioned button */
+    top: 0;
+    right: 0;
+  }
+
+.main__nav .nav__notif .fa-solid:hover {
+    color: var(--red-color);
+}
+
+.main__nav .nav__notif .notif {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    max-height: 400px;
+    width: 250px;
+    margin: 10px 20px 0 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10PX;
+    border-radius: 10px;
+
+}
+
+.main__nav .nav__notif .notif h3 {
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid var(--grey-dark-color);
+}
+
+.main__nav .nav__notif .advocacy {
+    color: rgb(255, 47, 47);
+}
+
+.main__nav .nav__notif .notif h4 {
+    margin-bottom: 5px;
+}
+
+.main__nav .nav__notif .notif p {
+    margin-bottom: 10px;
+}
+
+.main__nav .nav__notif .notif a {
+    padding: 5px;
+    text-align: center;
+    background: red;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--white-color);
+    text-decoration: none;
+
+}
+
 .main__nav .nav__logout {
     display: flex;
     align-items: center;
     background: transparent;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--white-color);
     text-decoration: none;
     transition: .2s ease;
@@ -267,7 +350,7 @@ body {
 .nav__logout .fa-solid {
     margin-right: 10px;
 }
-/* district */
+/* =================district========================== */
 
 .main .main__content .districts .district__container  {
     display: flex;
@@ -291,8 +374,8 @@ body {
 }
 
 .main .main__content .districts .district__container .district:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .main .main__content .districts .district__container .district .district__population {
@@ -305,14 +388,14 @@ body {
 }
 
 .main .main__content .districts .district__container .district .district__number {
-    background: rgb(255, 70, 70);
+    background: #ff4646;
     padding: 10px;
     border-radius: 50%;
     color: var(--white-color);
 }
 
 .main .main__content .districts .district__container .district .d2 {
-    background: rgb(232, 43, 103);
+    background: #e82b67;
 }
 
 .main .main__content .districts .district__container .district .d3 {
@@ -330,24 +413,74 @@ body {
 .main .main__content .districts .district__container .district .d6 {
     background: rgb(44, 174, 222);
 }
+/* ====================advocacy================ */
+
+
+.main .main__content .districts #advocacy__container {
+    display: flex;
+    justify-content: center;
+}
+
+.main .main__content .districts .district__container #advocacy {
+    max-width: 210px;
+    
+}
+
+.main .main__content .districts .district__container #advocacy .district__population {
+    margin-right: 5px;
+}
+
+.main .main__content .districts .district__container #advocacy .population__header{
+    margin-bottom: 10px;
+}
+
 
 /* table */
 
-.main .main__content .districts .district__table {
+.main .main__content  .district__table {
     margin-top: 30px;
     background: var(--white-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     border-radius: 10px;
 }
+/* manage user */
 
-.main .main__content .districts .district__table table {
+.main .main__content  .district__table .adduser__icon {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    
+}
+
+.main .main__content  .district__table .adduser__icon  .icon {
+    padding: 10px;
+    border: 1px solid #7777ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #7777ff;
+    transition: .2s ease;
+
+}
+
+.main .main__content  .district__table .adduser__icon  .icon:hover {
+    background: #7777ff;
+    color: var(--white-color);
+
+}
+/*  */
+
+.main .main__content  .district__table table {
     border-collapse: collapse;
     width: 100%;
     color: var(--text-color);
 }
 
-.main .main__content .districts .district__table table th {
+.main .main__content .district__table table th {
     background: transparent;
     color: var(--grey-dark-color);
     border-bottom: 2px solid var(--grey-color);
@@ -355,7 +488,7 @@ body {
     text-align: left;
 }
 
-.main .main__content .districts .district__table table td {
+.main .main__content .district__table table td {
     border: none;
     padding: 10px;
     text-align: left;
@@ -365,33 +498,34 @@ body {
 
 .main .main__content .district__table .edit {
     padding: 2px 10px;
-    background: var(--green-color);
+    font-size: 14px;
+    background: var(--white-color);
     border-radius: 5px;
-    border: none;
-    color: var(--white-color);
-    transition: .2s ease;
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+    transition: .2s ease-out;
     text-decoration: none;
 
 }
 
 .main .main__content .district__table .edit:hover {
-    background: var(--white-color);
-    color: var(--green-color);
+    background: var(--green-color);
+    color: var(--white-color);
 }
 
 .main .main__content .district__table .delete {
     padding: 2px 5px;
-    background: var(--red-color);
+    background: var(--white-color);
     border-radius: 5px;
-    border: none;
-    color: var(--white-color);
-    transition: .2s ease;
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+    transition: .2s ease-out;
 
 }
 
 .main .main__content .district__table .delete:hover {
-    background: var(--white-color);
-    color: var(--red-color);
+    background: var(--red-color);
+    color: var(--white-color);
 }
 
 /* ================================Add User============================== */
@@ -641,54 +775,12 @@ body {
 }
 
 /* ================================Questionaire============================== */
-
-#survey .survey__header {
-    height: 15vh;
-    background: url(images/background18.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-}
-
-#survey .survey__header .background__filter {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background:  rgba(89, 74, 255, 0.8) ;
-}
-
-#survey .survey__header .logo {
-    position: relative;
-    display: flex;
-    margin-left: 100px;
-
-}
-
-#survey .survey__header .logo img {
-    height: 50px;
-}
-
-#survey .survey__header .logo .brand {
-    margin: auto 10px;
-    color: var(--white-color);
-}
-
-#survey .survey__container {
-    margin-top: 150px;
+.survey__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .survey {
     z-index: 5;
@@ -702,6 +794,7 @@ body {
     box-shadow: 0 5px 15px rgba(255, 0, 0, 0.1);
 }
 
+
 #welcome {
     position: relative;
     display: flex;
@@ -709,19 +802,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 70px;
-
-}
-
-#welcome .image__container {
-    position: absolute;
-    top: 0;
+    margin-top: 50px;
     background: var(--white-color);
-    padding: 5px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -50px;
+
 }
 
 #welcome .image__container img {
@@ -781,135 +864,13 @@ body {
     background-color: #b00000;
 }
 
-/* survey footer */
-
-/* ================================ Advocacy ============================== */
-
- /* ==================nav================== */
-
- .main #advocacy .advocacy__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.main #advocacy .advocacy__nav .nav__header {
-    margin-right: auto;
-    color: var(--white-color);
-}
-
-.main #advocacy .advocacy__nav .nav__header .grey {
-    color: var(--grey-color);
-} 
-
-.main #advocacy .advocacy__nav .nav__header h4 {
-    font-weight: 700;
-}
-
-.main #advocacy .advocacy__nav .nav__header h5 {
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-
-.main #advocacy .advocacy__nav .nav__logout {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    padding: 10px;
-    border-radius: 10px;
-    color: var(--white-color);
-    text-decoration: none;
-    transition: .2s ease;
-}
-
-.main #advocacy .advocacy__nav .nav__logout:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
-}
-
-.main #advocacy .advocacy__nav .nav__logout .fa-solid {
-    margin-right: 10px;
-}
-
-
-
-/* main page */
-
- .advocacy__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    justify-content: flex-start;
-    gap: 30px;
- }
-
- .advocacy__container .advocacy {
-    padding: 10px;
-    background: var(--white-color);
-    border-radius: 10px;
-    max-width: 250px;
-    transition: .2s ease;
-    border: 1px solid var(--grey-color);
-
- }
-
-.advocacy__container .advocacy .image__container {
-    width: 50px;
-    height: 50px;
-    padding: 2px;
-    border-radius: 50%;
-    background: var(--red-variant-color);
-    overflow: hidden;
-    margin-top: -30px;
- }
-
-.advocacy__container .advocacy .image__container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
- }
- 
- .advocacy__container .advocacy .advocacy__info {
-    margin-bottom: 10px;
- }
- 
-.advocacy__container .advocacy .advocacy__info h1 {
-    margin-bottom: 5px;
-    color: var(--grey-darker-color);
-
- }
-
- .advocacy__container .advocacy .btn--view {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background: transparent;
-    padding: 5px 10px;
-    border-radius: 15px;
-    border: 1px solid var(--red-variant-color);
-    color: var(--red-variant-color);
-    transition: .2s ease;
- }
-
-.advocacy__container .advocacy .btn--view:hover {
-    background: var(--red-variant-color);
-    color: var(--white-color);
- }
-
- .advocacy__container .advocacy .btn--view p {
-    margin-right: auto;
- }
-
  /* ================================ Statistics, dstrict ============================== */
 
 
 /* ==================map================== */
  #stats .map__population {
     display: flex;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     padding: 20px;
     flex-wrap: wrap;
@@ -1038,7 +999,7 @@ body {
 #stats .charts .chart2 {
     background: var(--white-color);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 370px;
     height: 100%;
 
@@ -1051,24 +1012,280 @@ body {
     align-items: center;
     background: var(--white-color);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 100%;
     width: 370px;
   
 }
 
-/* ==================radarchart================== */
+/* ==================radar chart================== */
 #stats .charts .chart4 {
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--white-color);
     padding: 20px;
+    border-radius: 10px;
     height: 100%;
     width: 370px;
-    border-radius: 20px;
   
 }
+
+
+/* ==================google charts/ piechart================== */
+
+
+
+ /* ================================ Profile ============================== */
+.main .main__content .profile__container {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    background:  var(--white-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__container .info__container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid  var(--grey-color);
+    padding: 10px;
+
+}
+
+
+.profile__container .info__container .profile {
+    display: flex;
+}
+
+.profile__container .image__container {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile__container .image__container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+   
+
+}
+
+.profile__container .info__container .informations {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 7px;
+}
+
+.profile__container .info__container .informations .user__advocacy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.profile__container .info__container .informations .user__advocacy .advocacy {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #e82b67;
+    color: #e82b67;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: .2s ease;
+}
+
+.profile__container .info__container .informations .user__advocacy .advocacy:hover {
+    background: #e82b67 ;
+    color: var(--white-color);
+}
+
+
+.profile__container .info__container .informations .btn-send-notif {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background: red;
+    border: none;
+    color: var(--white-color);
+    transition: .2s ease;
+}
+
+.profile__container .info__container .informations .btn-send-notif:hover {
+    background: #dd0000;
+    color: var(--grey-light-color);
+}
+
+.profile__container .info__container .informations .btn-send-notif .fa-bell {
+    margin-right: 10px;
+    font-size: 15px;
+}
+/* Details */
+.main .main__content .profile__container .details__container {
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.main .main__content .profile__container .details__container .fields h5 {
+    margin-bottom: 10px;
+}
+
+.main .main__content .profile__container .details__container .inputs h5 {
+    margin: 0 0 10px 40px;
+}
+
+.main .main__content .profile__container .details__container .inputs h5 i {
+    margin-right: 7px;
+    color: var(--grey-darker-color);
+}
+
+ /* ================================ Result ============================== */
+
+ .main .result__container {
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+ }
+
+.main .result__container .chart__container {
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--white-color); display: block;
+}
+
+/* table */
+
+.main .main__content  .result__table {
+    background: var(--white-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 600px;
+    overflow: auto;
+}
+
+.main .main__content  .result__table  table {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.main .main__content .result__table  table th {
+    background: transparent;
+    color: var(--grey-dark-color);
+    border-bottom: 2px solid var(--grey-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.main .main__content .result__table  table td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+
+
+
+/* ================================ Advocacy ============================== */
+
+  .main .advocacy__container {
+    border-radius: 10px;
+    width: 100%;
+    background: var(--white-color);
+    padding: 20px;
+ }
+
+ .main .advocacy__container .thumbnail__info {
+    display: flex;
+    gap: 20px;
+    border-bottom: 5px solid var(--black-color);
+    border-top: 5px solid var(--black-color);
+    padding: 20px;
+ }
+
+ .main .advocacy__container .thumbnail__info .thumbnail__container {
+    width: 100%;
+    height: 400px;
+ }
+
+ .main .advocacy__container .thumbnail__info .thumbnail__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .main .advocacy__container .thumbnail__info .advocacy__info {
+    width: 100%;
+    height: 100%;
+ }
+
+ .main .advocacy__container .thumbnail__info .advocacy__info h1 {
+    font-size: 70px;
+ }
+
+ .main .advocacy__container .thumbnail__info .advocacy__info h2 {
+    margin-top: 60px;
+    font-weight: 500;
+ }
+
+ .main .advocacy__container .advocacy__body {
+    padding: 50px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph {
+    margin-bottom: 20px;
+
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul, ol {
+    margin: 10px 0 0 50px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul li, ol li {
+    margin-bottom: 10px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul li .bold, ol li .bold {
+    font-weight: 700;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph p {
+    margin-top: 10px;
+ }
+
+ .main .advocacy__container .advocacy__body .advocacy__image {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+ }
+
+ .main .advocacy__container .advocacy__body .advocacy__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+
+
+
 
 
 
@@ -1142,9 +1359,25 @@ small {
 .main .main__content .districts .district__container  {
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
+.main .main__content .districts .district__container .district .district__population {
+    margin-right: 5px;
+    display: none;
+}
+
+.main .main__content .districts .district__container .district {
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+.main .main__content .districts .district__container .district__number h1 {
+    font-size: 20px;
+}
+
+/* ====================advocacy================ */
 /* table */
 
 .main .main__content .districts .district__table {
@@ -1160,6 +1393,12 @@ small {
     background: var(--grey-color)
 }
 
+
+/* manage user */
+.main .main__content  .district__table .adduser__icon  .icon {
+    padding: 5px;
+    font-size: 15px;
+}
 
 /* =================================navigation======================== */
  .main__nav .search {
@@ -1296,9 +1535,6 @@ small {
 
 }
 
-#welcome .image__container {
-
-}
 
 #welcome .image__container img {
     height: 100%;
@@ -1383,126 +1619,6 @@ small {
     color: var(--red-color);
 }
 
-/* ================================ Advocacy ============================== */
-
- /* ==================nav================== */
-
- .main #advocacy .advocacy__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.main #advocacy .advocacy__nav .nav__header {
-    margin-right: auto;
-    color: var(--white-color);
-}
-
-.main #advocacy .advocacy__nav .nav__header .grey {
-    color: var(--grey-color);
-} 
-
-.main #advocacy .advocacy__nav .nav__header h4 {
-    font-weight: 700;
-}
-
-.main #advocacy .advocacy__nav .nav__header h5 {
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-
-.main #advocacy .advocacy__nav .nav__logout {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    padding: 10px;
-    border-radius: 10px;
-    color: var(--white-color);
-    text-decoration: none;
-    transition: .2s ease;
-}
-
-.main #advocacy .advocacy__nav .nav__logout:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
-}
-
-.main #advocacy .advocacy__nav .nav__logout .fa-solid {
-    margin-right: 10px;
-}
-
-
-
-/* main page */
-
- .advocacy__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    justify-content: flex-start;
-    gap: 30px;
- }
-
- .advocacy__container .advocacy {
-    padding: 10px;
-    background: var(--white-color);
-    border-radius: 10px;
-    max-width: 250px;
-    transition: .2s ease;
-    border: 1px solid var(--grey-color);
-
- }
-
-.advocacy__container .advocacy .image__container {
-    width: 50px;
-    height: 50px;
-    padding: 2px;
-    border-radius: 50%;
-    background: var(--red-variant-color);
-    overflow: hidden;
-    margin-top: -30px;
- }
-
-.advocacy__container .advocacy .image__container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
- }
- 
- .advocacy__container .advocacy .advocacy__info {
-    margin-bottom: 10px;
- }
- 
-.advocacy__container .advocacy .advocacy__info h1 {
-    margin-bottom: 5px;
-    color: var(--grey-darker-color);
-
- }
-
- .advocacy__container .advocacy .btn--view {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background: transparent;
-    padding: 5px 10px;
-    border-radius: 15px;
-    border: 1px solid var(--red-variant-color);
-    color: var(--red-variant-color);
-    transition: .2s ease;
- }
-
-.advocacy__container .advocacy .btn--view:hover {
-    background: var(--red-variant-color);
-    color: var(--white-color);
- }
-
- .advocacy__container .advocacy .btn--view p {
-    margin-right: auto;
- }
-
  /* ================================ Statistics, dstrict ============================== */
  /* ==================map================== */
 .main  #stats  .map__population .map-div {
@@ -1564,6 +1680,141 @@ small {
 }
 
 
+
+ /* ================================ Profile ============================== */
+ .main .main__content .profile__container {
+    padding: 10px;
+}
+
+.profile__container .image__container {
+    height: 70px;
+    width: 70px;
+}
+
+.profile__container .info__container .informations {
+    padding: 5px;
+    gap: 5px;
+}
+
+.profile__container .info__container .informations .btn-send-notif {
+    width: 70px;
+    font-size: 12px;
+}
+
+.profile__container .info__container .informations .btn-send-notif .fa-bell {
+    font-size: 12px;
+}
+
+/* Details */
+.main .main__content .profile__container .details__container {
+    margin-top: 10px;
+}
+
+.main .main__content .profile__container .details__container .inputs h5 {
+    margin: 0 0 10px 40px;
+}
+
+.main .main__content .profile__container .details__container .inputs h5 i {
+    margin-right: 7px;
+    color: var(--grey-darker-color);
+}
+
+ /* ================================ Result ============================== */
+
+ .main .result__container {
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+.main .result__container .chart__container {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* table */
+
+.main .main__content  .result__table {
+    padding: 10px 10px;
+    overflow: auto;
+    height: 300px;
+}
+
+
+.main .main__content .result__table  table th {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.main .main__content .result__table  table td {
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+
+/* ================================ Advocacy ============================== */
+
+.main .advocacy__container {
+    padding: 10px;
+ }
+
+ .main .advocacy__container .thumbnail__info {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid var(--black-color);
+    border-top: 2px solid var(--black-color);
+ }
+
+ .main .advocacy__container .thumbnail__info .thumbnail__container {
+    height: 200px;
+ }
+
+ .main .advocacy__container .thumbnail__info .advocacy__info h1 {
+    font-size: 30px;
+ }
+
+ .main .advocacy__container .thumbnail__info .advocacy__info h2 {
+    margin-top: 5px;
+    font-size: 15px;
+ }
+
+ .main .advocacy__container .advocacy__body {
+    padding: 10px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph {
+    margin-bottom: 10px;
+
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph h1 {
+    font-size: 15px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul, ol {
+    margin: 10px 0 0 30px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 12px;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph ul li .bold, ol li .bold {
+    font-weight: 700;
+ }
+
+ .main .advocacy__container .advocacy__body .paragraph p {
+    margin-top: 5px;
+ }
+
+ .main .advocacy__container .advocacy__body .advocacy__image {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+ }
 
  }
 
